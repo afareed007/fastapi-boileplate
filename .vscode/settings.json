@@ -1,18 +1,7 @@
 {
-  "python.defaultInterpreterPath": "/opt/anaconda3/envs/latest-python",
   "python.analysis.extraPaths": [
     "${workspaceFolder}",
     "${workspaceFolder}/app"
   ],
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintArgs": [
-    "--disable=C0111", // Disable docstring warnings (example)
-    "--max-line-length=120" // Example setting for line length
-  ],
-  "python.formatting.provider": "black", // Use Black for code formatting
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true,
-  "python.testing.pytestArgs": ["tests"],
   "cSpell.enabled": false
 }
