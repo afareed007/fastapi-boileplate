@@ -10,10 +10,10 @@ class UserCreate(UserBase):
     password: str
 
 class UserUpdate(UserBase):
-    pass
+    password: Optional[str] = None  # Optional
 
 class UserResponse(UserBase):
     id: int
 
     class Config:
-        orm_mode = True
+        orm_mode = True # This tells Pydantic to work with SQLAlchemy models
